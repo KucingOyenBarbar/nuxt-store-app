@@ -8,6 +8,16 @@ export default defineNuxtConfig({
     '@nuxtjs/robots',
   ],
 
+  app: {
+    head: {
+      script: [
+        { src: '~/node_modules/bootstrap/dist/js/bootstrap.js', defer: true },
+      ],
+    },
+  },
+
+  css: ['~/assets/css/global.css'],
+
   webVitals: {
     provider: 'auto',
     debug: false, // debug enable metrics reporting on dev environments

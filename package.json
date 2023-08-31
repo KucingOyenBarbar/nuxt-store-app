@@ -15,5 +15,8 @@
     "@nuxtjs/robots": "^3.0.0",
     "@nuxtjs/web-vitals": "^0.2.6",
     "nuxt": "^3.7.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1"
   }
 }
