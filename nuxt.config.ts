@@ -11,31 +11,49 @@ export default defineNuxtConfig({
   ],
 
   app: {
-    head: {},
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      title: 'Selamat datang di Nuxt Store',
+      titleTemplate: '%s - Nuxt Store',
+      // titleTemplate: (titleChunk) => {
+      //   return titleChunk ? `${titleChunk} - smartnation ID` : 'Site Title';
+      // },
+    },
   },
 
   css: ['~/assets/css/global.css'],
 
-  webVitals: {
-    provider: 'auto',
-    debug: false, // debug enable metrics reporting on dev environments
-    disabled: false,
+  // Configuration modules
+  image: {
+    // options
+    inject: true,
+    quality: 80,
+    format: ['webp'],
   },
 
   googleFonts: {
     families: {
       Roboto: true,
-      Inter: [400, 700],
       'Josefin+Sans': true,
       Lato: [100, 300],
+      Poppins: [300, 400, 500, 600],
       Raleway: {
         wght: [100, 400],
         ital: [100],
       },
     },
+    // options...
+  },
 
-    preconnect: true,
-    prefetch: true,
-    preload: true,
+  colorMode: {
+    preference: 'system', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
+    hid: 'nuxt-color-mode-script',
+    globalName: '__NUXT_COLOR_MODE__',
+    componentName: 'ColorScheme',
+    classPrefix: '',
+    classSuffix: '-mode',
+    storageKey: 'nuxt-color-mode',
   },
 });
