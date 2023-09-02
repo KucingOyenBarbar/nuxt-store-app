@@ -1,4 +1,4 @@
-/* @import '~/assets/css/themes/dark-mode.css'; */
+@import '~/assets/css/themes/dark-mode.css';
 @import '~/node_modules/bootstrap/dist/css/bootstrap.css';
 
 :root {
@@ -12,8 +12,15 @@
 
 html,
 body {
-  background: #EEF1F4 !important;
+background: #EEF1F4 !important;
   color: #17181B;
   width: 100%;
   min-height: 100vh;
 }
+
+
+
+.text-heading {
+  color: #17181B;
+}
+

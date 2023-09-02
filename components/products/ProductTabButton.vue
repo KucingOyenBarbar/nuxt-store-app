@@ -1,7 +1,8 @@
 <template>
   <div class="hstack gap-2 py-3">
     <button v-for="category in categories" :key="category" @click="handleClick(category)" type="button"
-      :class="`btn btn-dark btn-sm rounded ${category === isCategory ? 'active' : ''}`">{{ category
+      :class="`btn btn-outline-dark btn-md rounded shadow-0 border-0 ${category === isCategory ? 'active' : ''}`">{{
+        category
       }}</button>
   </div>
 </template>

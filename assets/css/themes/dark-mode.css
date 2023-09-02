@@ -1,12 +1,18 @@
 .dark-mode body {
-  background-color: #000;
+  background: #000 !important;
   color: #ebf4f1;
 }
 
 .dark-mode .navbar {
   background: #000 !important;
-} 
 
-.dark-mode .navbar .navbar-brand {
+}
+
+.dark-mode .product-card {
+  background-color: #17181B;
+}
+
+.dark-mode 
+.text-heading {
   color: #ebf4f1;
 }

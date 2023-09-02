@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row justify-content-center g-2 py-5">
         <div class="col-sm-10">
-          <div class="card  rounded border-0 mb-3">
+          <div :class="`card  rounded border-0 mb-3 product-card`">
             <div class="card-body">
               <div class="row justify-content-arround g-3 pt-3 mb-3">
                 <div class="col-sm-4">
@@ -38,7 +38,7 @@
               </div>
             </div>
           </div>
-          <div class="card  rounded border-0 mb-3">
+          <div class="card  rounded border-0 mb-3 product-card">
             <div class="card-body">
               <div class="vstack gap-2">
                 <h3 class="text-start text-capitalize fst-normal fs-4">Deskripsi Produk</h3>
@@ -46,15 +46,9 @@
               </div>
             </div>
           </div>
-          <div class="card  rounded border-0 mb-3">
-            <div class="card-body">
-              <div class="vstack gap-2">
-                <h3 class="text-start text-capitalize fst-normal fs-4">Produk Lainnya</h3>
-
-                <ProductsProductListItem :products="products?.slice(0, 12)" />
-
-              </div>
-            </div>
+          <div class="pt-3">
+            <h3 class="text-start text-capitalize fst-normal fs-4">Produk Lainnya</h3>
+            <ProductsProductListItem :products="products?.slice(0, 12)" />
           </div>
         </div>
       </div>
