@@ -6,14 +6,12 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxtjs/web-vitals',
     '@nuxtjs/robots',
+    '@nuxtjs/color-mode',
+    'nuxt-bootstrap-icons',
   ],
 
   app: {
-    head: {
-      script: [
-        { src: '~/node_modules/bootstrap/dist/js/bootstrap.js', defer: true },
-      ],
-    },
+    head: {},
   },
 
   css: ['~/assets/css/global.css'],
